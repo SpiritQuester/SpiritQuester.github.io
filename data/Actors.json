@@ -1,6 +1,6 @@
 [
 null,
-{"id":1,"battlerName":"oshen","characterIndex":0,"characterName":"","classId":1,"equips":[0,0,0,6,0],"faceIndex":0,"faceName":"Oshen","traits":[{"code":51,"dataId":2,"value":1},{"code":51,"dataId":6,"value":1},{"code":51,"dataId":4,"value":1},{"code":51,"dataId":7,"value":1},{"code":52,"dataId":1,"value":1}],"initialLevel":1,"maxLevel":99,"name":"Oshen","nickname":"","note":"","profile":""},
+{"id":1,"battlerName":"oshen","characterIndex":0,"characterName":"oshen","classId":1,"equips":[0,0,0,6,0],"faceIndex":0,"faceName":"Oshen2","traits":[{"code":51,"dataId":2,"value":1},{"code":51,"dataId":6,"value":1},{"code":51,"dataId":4,"value":1},{"code":51,"dataId":7,"value":1},{"code":52,"dataId":1,"value":1}],"initialLevel":1,"maxLevel":99,"name":"Oshen","nickname":"","note":"","profile":""},
 {"id":2,"battlerName":"Rocamo","characterIndex":3,"characterName":"Rocamo","classId":2,"equips":[1,0,0,0,0],"faceIndex":0,"faceName":"Rocamo","traits":[],"initialLevel":1,"maxLevel":99,"name":"Rocamo","nickname":"","note":"","profile":"Canine"},
 {"id":3,"battlerName":"Vesheth","characterIndex":0,"characterName":"Vesheth","classId":3,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"Vesheth","traits":[],"initialLevel":1,"maxLevel":99,"name":"Vesheth","nickname":"","note":"","profile":"Bird"},
 {"id":4,"battlerName":"Sethka","characterIndex":0,"characterName":"Sethka","classId":4,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"Sethka","traits":[],"initialLevel":1,"maxLevel":99,"name":"Sethka","nickname":"","note":"","profile":"Snake"},
