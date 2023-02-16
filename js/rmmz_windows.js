@@ -2826,7 +2826,7 @@ Window_Status.prototype.refresh = function() {
 
 Window_Status.prototype.drawBlock1 = function() {
     const y = this.block1Y();
-    this.drawActorName(this._actor, 6, y, 168);
+    //this.drawActorName(this._actor, 6, y, 168);
     this.drawActorClass(this._actor, 192, y, 168);
     this.drawActorNickname(this._actor, 432, y, 270);
 };
@@ -2917,14 +2917,21 @@ Window_StatusParams.prototype.itemHeight = function() {
 };
 
 Window_StatusParams.prototype.drawItem = function(index) {
-    const rect = this.itemLineRect(index);
-    const paramId = index + 2;
-    const name = TextManager.param(paramId);
-    const value = this._actor.param(paramId);
-    this.changeTextColor(ColorManager.systemColor());
-    this.drawText(name, rect.x, rect.y, 160);
-    this.resetTextColor();
-    this.drawText(value, rect.x + 160, rect.y, 60, "right");
+    var excluded_stats = [2,3,5]; //exclude all stats except ATK, DEF, AGL, HP, MP
+    if (!(excluded_stats.includes(index)))  {
+        var rect = null;
+        if (index == 4)
+            rect = this.itemLineRect(2);
+        else
+            rect = this.itemLineRect(index);
+        const paramId = index + 2;
+        const name = TextManager.param(paramId);
+        const value = this._actor.param(paramId);
+        this.changeTextColor(ColorManager.systemColor());
+        this.drawText(name, rect.x, rect.y, 160);
+        this.resetTextColor();
+        this.drawText(value, rect.x + 160, rect.y, 60, "right");
+    }
 };
 
 Window_StatusParams.prototype.drawItemBackground = function(/*index*/) {
