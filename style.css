@@ -1,0 +1,84 @@
+body {
+    background-image: url("img/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    font-family: monospace;
+}
+img {
+    position: absolute;
+    z-index: 1;
+}
+#player {
+    z-index: 1;
+    width: 64px;
+    height: 64px;
+}
+#enemy {
+    width: 64px;
+    height: 64px;
+}
+#sword {
+    z-index: 2;
+}
+#player_hp {
+    transform: scale(4);
+    position:  absolute;
+    left: 300px;
+    top: 25px;
+    width: 90px;
+}
+#player_hp_label {
+    position: absolute;
+    font-size: 40px;
+    left: 110px;
+    color: indianred;
+    text-shadow: 0 0 5px black;
+}
+#enemy_hp {
+    transform: scale(4) scaleX(-1);
+    position:  absolute;
+    left: 850px;
+    top: 25px;
+    width: 90px;
+}
+#enemy_hp_label {
+    position: absolute;
+    font-size: 40px;
+    left: 1090px;
+    color: indianred;
+    text-shadow: 0 0 5px black;
+}
+.base {
+    z-index: 0;
+    width: 64px;
+}
+#player_base {
+    top: 320px;
+    left: 500px;
+}
+#enemy_base {
+    top: 320px;
+    left: 700px;
+}
+#atk_arrow {
+    z-index: 1;
+    top: 335px;
+    left: 525px;
+    visibility:  hidden;
+    opacity: 0.4;
+}
+#dodge_arrow {
+    z-index: 1;
+    top: 335px;
+    left: 435px;
+    visibility:  hidden;
+    opacity: 0.4;
+}
+.hit_anim {
+    z-index: 3;
+    width: 120px; height: 120px;
+    visibility:  hidden;
+    opacity: 0.9;
+    filter: brightness(300%) saturate(200%) blur(2px);
+}

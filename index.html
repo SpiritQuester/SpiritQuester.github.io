@@ -1,16 +1,26 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <meta name="viewport" content="user-scalable=no">
-        <link rel="icon" href="icon/icon.png" type="image/png">
-        <link rel="apple-touch-icon" href="icon/icon.png">
-        <link rel="stylesheet" type="text/css" href="css/game.css">
-        <title></title>
-    </head>
-    <body style="background-color: black">
-        <script type="text/javascript" src="js/main.js"></script>
-    </body>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="player.js"></script>
+    <script src="enemy.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" name="viewport" content="width=device-width,height=device-height,initial-scale=1"/>
+    <title>SpiritQuester &#127918; Engine</title>
+</head>
+<body>
+    <span id="player_hp_label">HP</span><meter id="player_hp" value="1">100%</meter>
+    <span id="enemy_hp_label">HP</span><meter id="enemy_hp" value="1">100%</meter>
+
+    <img src="img/plyr_right.gif" id="player" alt="player">
+    <img src="img/sword_right.gif" id="sword" alt="sword">
+    <img src="img/slash_right.gif" class="hit_anim" id="plyr_hit_anim" alt="plyr_hit_anim">
+    <img src="img/player_base.png" class="base" id="player_base" alt="player_base">
+    <img src="img/dodge_arrow.png" id="dodge_arrow" alt="dodge_arrow">
+    <img src="img/attack_arrow.png" id="atk_arrow" alt="atk_arrow">
+
+    <img src="img/enmy.gif" id="enemy" alt="enemy">
+    <img src="img/enemy_base.png" class="base" id="enemy_base" alt="enemy_base">
+    <img src="img/slash_left.gif" class="hit_anim" id="enemy_hit_anim" alt="enemy_hit_anim">
+</body>
 </html>
